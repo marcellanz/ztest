@@ -1,0 +1,20 @@
+diff -cr /usr/local/Cellar/go/1.4/libexec/src/compress/flate/deflate.go compress/flate/deflate.go
+*** /usr/local/Cellar/go/1.4/libexec/src/compress/flate/deflate.go	2015-01-08 10:42:43.000000000 -0500
+--- compress/flate/deflate.go	2015-02-10 16:12:05.000000000 -0500
+***************
+*** 16,22 ****
+  	fastCompression    = 3
+  	BestCompression    = 9
+  	DefaultCompression = -1
+! 	logWindowSize      = 15
+  	windowSize         = 1 << logWindowSize
+  	windowMask         = windowSize - 1
+  	logMaxOffsetSize   = 15  // Standard DEFLATE
+--- 16,22 ----
+  	fastCompression    = 3
+  	BestCompression    = 9
+  	DefaultCompression = -1
+! 	logWindowSize      = 8 // 15
+  	windowSize         = 1 << logWindowSize
+  	windowMask         = windowSize - 1
+  	logMaxOffsetSize   = 15  // Standard DEFLATE
